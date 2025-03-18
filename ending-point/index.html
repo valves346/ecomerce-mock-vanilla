@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Checkout</h1>
+      <div class="product-container">
+        <div class="product-image">
+          <img src="./shopping.webp" alt="Product Image" />
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Premium Bluetooth Headphones</h2>
+          <p class="product-description">
+            High-quality wireless headphones with noise cancellation
+          </p>
+          <p class="product-price">$129.99</p>
+
+          <div class="quantity-selector">
+            <button id="decrease-btn" class="quantity-btn">-</button>
+            <input type="number" id="quantity" value="1" min="1" max="10" />
+            <button id="increase-btn" class="quantity-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-row">
+          <span>Product:</span>
+          <span>Premium Bluetooth Headphones</span>
+        </div>
+        <div class="summary-row">
+          <span>Price:</span>
+          <span>$129.99</span>
+        </div>
+        <div class="summary-row">
+          <span>Quantity:</span>
+          <span id="summary-quantity">1</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total:</span>
+          <span id="summary-total">$129.99</span>
+        </div>
+      </div>
+
+      <button id="continue-btn" class="continue-btn">
+        Continue to Payment
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
