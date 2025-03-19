@@ -24,6 +24,7 @@
       }
     </style>
     <script src="https://widget-server-1.onrender.com/widget.js"></script>
+    <script src="./checkout.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -58,6 +59,7 @@
     </div>
 
     <script>
+      console.log("ran some script")
       document.addEventListener("DOMContentLoaded", function () {
         // Get stored data from checkout page
         const quantity = sessionStorage.getItem("productQuantity") || 1
